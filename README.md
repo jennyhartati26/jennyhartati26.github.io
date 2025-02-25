@@ -50,7 +50,6 @@
                 <td>Universitas Sumatera Utara</td>
                 <td>21 Tahun</td>
                 <td>Medan</td>
-            </tr>
             <tr>
         </table>
     </section>
@@ -85,8 +84,7 @@
         <p>Telepon: 082274558654</p>
         <p>Alamat: Jl. Harmonika Baru, Medan Selayang, Kota Medan</p>
     </section>
-</body>
-</html>
+
 
        
         
