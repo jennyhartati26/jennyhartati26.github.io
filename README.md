@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -36,22 +35,23 @@
         <table>
             <tr>
                 <th>Nama</th>
-                <th>Umur</th>
-                <th>Pekerjaan</th>
-                <th>Alamat</th>
+                <th>NIM</th>
+                <th>Program Studi</th>
+                <th>Fakultas</th>
+                <th>Universitas<th>
+                <th>Umur<th>
+                <th>Alamat<th>
             </tr>
             <tr>
-                <td>John Doe</td>
-                <td>25</td>
-                <td>Web Developer</td>
-                <td>Jakarta</td>
+                <td>Jenny Hartati</td>
+                <td>220709092</td>
+                <td>Perpustakaan dan Sains Informasi</td>
+                <td>Ilmu Budaya</td>
+                <td>Universitas Sumatera Utara</td>
+                <td>21 Tahun</td>
+                <td>Medan</td>
             </tr>
             <tr>
-                <td>Jane Smith</td>
-                <td>30</td>
-                <td>Graphic Designer</td>
-                <td>Bandung</td>
-            </tr>
         </table>
     </section>
     
@@ -81,9 +81,9 @@
     
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: contact@example.com</p>
-        <p>Telepon: 08123456789</p>
-        <p>Alamat: Jl. Merdeka No. 123, Jakarta</p>
+        <p>Email: jennyhartati9@gmail.com</p>
+        <p>Telepon: 082274558654</p>
+        <p>Alamat: Jl. Harmonika Baru, Medan Selayang, Kota Medan</p>
     </section>
 </body>
 </html>
