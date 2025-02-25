@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Website Portofolio</title>
+  <link rel="stylesheet" type="text/css" target="_blank" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1>LIBRARY</h1>
+    </div>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Feature</a>
+      </li>
+      <li>
+        <a href="#">Book List</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="title">Welcome,</h1>
+      <p class="subtitle">Hello my name is Jenny</p>
+      <p class="description">Website ini akan memberikan informasi catalog buku <br> yang menarik untuk di baca</p>
+    </div>
+  </section>
+
+  <div class="container-buku">
+    <div class="container-title">
+      <h1 class="title">Katalog Buku</h1>
+      <p class="subtitle">Top 4 my favorites books</p>
+    </div>
+    <div class="layout-buku">
+      <div class="center-buku">
+        <div class="card-buku">
+          <img class="image-buku"
+            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg"
+            alt="Avatar">
+          <div class="card-desc">
+            <h4><b>Atomic Habits</b></h4>
+            <a href="https://www.goodreads.com/book/show/40121378-atomic-habits">Baca Buku..</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-buku">
+        <div class="card-buku">
+          <img class="image-buku"
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Sebuah-seni-untuk-bersikap-bodoh-amat.jpg"
+            alt="Avatar">
+          <div class="card-desc">
+            <h4><b>Seni untuk bersikap <br> bodo amat</b></h4>
+            <a href="https://www.goodreads.com/book/show/40121378-atomic-habits">Baca Buku..</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-buku">
+        <div class="card-buku">
+          <img class="image-buku"
+            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1548033656i/42861019.jpg"
+            alt="Avatar">
+          <div class="card-desc">
+            <h4><b>Filosi Teras</b></h4>
+            <a href="https://www.goodreads.com/book/show/42861019-filosofi-teras">Baca Buku..</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-buku">
+        <div class="card-buku">
+          <img class="image-buku"
+            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348663465i/8352701.jpg"
+            alt="Avatar">
+          <div class="card-desc">
+            <h4><b>Introducing HTML5</b></h4>
+            <a
+              href="https://www.goodreads.com/book/show/8352701-introducing-html-5?from_search=true&from_srp=true&qid=3rITQpqzJ3&rank=7">Baca
+              Buku..</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="about-container">
+    <div class="image-left">
+      <img class="image-avatar"
+        src="https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Avatar">
+    </div>
+    <div class="container-about-title">
+      <h1 class="about-title">About Me</h1>
+      <ol class="olcards">
+        <li style="--cardColor:#fc374e">
+          <div class="content">
+            <div class="icon">😀</div>
+            <div class="title">Nama | Umur </div>
+            <div class="text">Jenny Hartati | 21 Tahun</div>
+          </div>
+        </li>
+        <li style="--cardColor:#36aeb3">
+          <div class="content">
+            <div class="icon">😁</div>
+            <div class="title">NIM</div>
+            <div class="text">220709092</div>
+          </div>
+        </li>
+        <li style="--cardColor:#162d59">
+          <div class="content">
+            <div class="icon">😉</div>
+            <div class="title">Fakultas | Program Studi </div>
+            <div class="text">Ilmu Budaya | Perpustakaan dan Sains Informasi</div>
+          </div>
+        </li>
+        <li style="--cardColor:#f15f0e">
+          <div class="content">
+            <div class="icon">😜</div>
+            <div class="title">Universitas</div>
+            <div class="text">Sumatera Utara</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+
+  <section class="contact-section">
+    <div class="contact-intro">
+      <h2 class="contact-title">Get in Touch</h2>
+      <p class="contact-description">
+        Fill out the form below and we'll get back to you as soon as possible.
+      </p>
+    </div>
+
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+      <input type="hidden" name="from_name" value="My Website" />
+      <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+      <div class="form-group-container">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone</label>
+          <input id="phone" name="phone" class="form-input" placeholder="+62" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+        </div>
+      </div>
+      <button class="form-submit" type="submit">Kirim Pesan</button>
+    </form>
+
+  </section>
+
+  <div class="footer">
+    <div class="item-footer">
+      <h1>Email</h1>
+      <div class="data-footer">
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThD6A938X2F3kMW50WVmJZtngHfx8eBXFL-w&s" alt="" class="logo-footer">
+        </div>
+        <p>jennyhartati9@gmail.com</p>
+      </div>
+      
+    </div>
+    <div class="item-footer">
+      <h1>No Handphone</h1>
+      <div class="data-footer">
+        <div>
+          <img src="https://static-00.iconduck.com/assets.00/whatsapp-icon-1020x1024-iykox85t.png" alt="" class="logo-footer">
+        </div>
+        <p>082274558654</p>
+      </div>
+    </div>
+    <div class="item-footer">
+      <h1>Alamat</h1>
+      <div class="data-footer">
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" alt="" class="logo-footer">
+        </div>
+        <p> Jl. Harmonika Baru,<br> Medan Selayang, Kota Medan</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <p>@2025 My Library Website</p>
+  </div>
+
+</body>
+
+</html>
