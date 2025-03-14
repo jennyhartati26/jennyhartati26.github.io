@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Get In Touch</title>
+    <link rel="stylesheet" type="text/css" target="_blank" href="style.css" />
+</head>
+
+<body>
+    <script>
+        function showAlert() {
+            alert("Hello! This is an alert message.");
+        }
+    </script>
+    <!-- atas -->
+  <nav>
+    <div class="logo">
+      <h1>LIBRARY</h1>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="book-list.html">Book List</a>
+      </li>
+      <li>
+        <a href="about-me.html">About Me</a>
+      </li>
+      <li>
+        <a href="get-intouch.html">Get In Touch</a>
+
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </nav>
+ <!-- atas -->
+
+    <section class="contact-section">
+        <div class="contact-intro">
+          <h2 class="contact-title">Get in Touch</h2>
+          <p class="contact-description">
+            Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+        </div>
+    
+        <form class="contact-form">
+              <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+    
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input id="phone" name="phone" class="form-input" placeholder="+62" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+        </div>
+        <a class="form-submit" type="submit" href="https://api.whatsapp.com/send?phone=6282274558654" >Kirim Pesan</a>
+        </form>
+    
+      </section>
+</body>
+
+</html>
