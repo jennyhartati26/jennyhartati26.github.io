@@ -148,6 +148,8 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
+  background:#F5EFE7;
+
 }
 /* .hero {
   position: relative;
@@ -196,7 +198,6 @@ body, html {
 
 .container-buku {
   display: block;
-  background-color: #F5F5F5;
   align-items: center;
   justify-content: center;
 }
@@ -258,13 +259,13 @@ body, html {
 }
 
 .about-container {
-  background:##F5EFE7;
-  margin-top: 100px;
+  background:#F5EFE7;
   display: flex;
   justify-content: center;
   align-items: start;
   padding-left: 100px;
   padding-right: 100px;
+  margin-bottom: 100px;
 }
 
 .image-left {
