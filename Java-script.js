@@ -1,20 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Toggle menu untuk hamburger
+    // Toggle menu untuk hamburger dengan animasi
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector("nav ul");
 
     hamburger.addEventListener("click", function () {
         navMenu.classList.toggle("active");
+        hamburger.classList.toggle("toggle");
     });
 
     // Tutup menu saat link diklik
     document.querySelectorAll("nav ul li a").forEach(link => {
         link.addEventListener("click", function () {
             navMenu.classList.remove("active");
+            hamburger.classList.remove("toggle");
         });
     });
 
-    // Smooth scrolling
+    // Smooth scrolling dengan efek fade-in
     document.querySelectorAll("a[href^='#']").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
@@ -27,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     top: targetElement.offsetTop - 50,
                     behavior: "smooth"
                 });
+                
+                targetElement.classList.add("fade-in");
+                setTimeout(() => {
+                    targetElement.classList.remove("fade-in");
+                }, 1000);
             }
         });
     });
@@ -47,4 +54,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", checkScroll);
     checkScroll();
+
+    // Efek teks ketik otomatis
+    const textElement = document.querySelector(".subtitle");
+    const text = "Hello, my name is Jenny";
+    let index = 0;
+
+    function typeEffect() {
+        if (index < text.length) {
+            textElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 100);
+        }
+    }
+    
+    textElement.textContent = ""; // Reset teks
+    typeEffect();
 });
