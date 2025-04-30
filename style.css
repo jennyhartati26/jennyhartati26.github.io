@@ -504,7 +504,7 @@ body, html {
 
 .button {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #0d3158;
   color: #fff;
   padding: 12px 24px;
   text-decoration: none;
@@ -514,5 +514,5 @@ body, html {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #071c33;
 }
