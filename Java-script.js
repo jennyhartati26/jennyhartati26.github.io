@@ -71,61 +71,11 @@ document.addEventListener("DOMContentLoaded", function () {
     textElement.textContent = ""; // Reset teks
     typeEffect();
 
-    function setCookie(name, value, days) {
-        const expires = new Date(Date.now() + days * 86400000).toUTCString();
-        document.cookie = `${name}=${value}; expires=${expires}; path=/`;
-    }
-    
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-    }
-    
-    const popup = document.getElementById("cookieConsent");
-    const settings = document.getElementById("cookieSettings");
-    const acceptBtn = document.getElementById("acceptAll");
-    const rejectBtn = document.getElementById("rejectNonEssential");
-    const settingsBtn = document.getElementById("openSettings");
-    const saveBtn = document.getElementById("saveSettings");
-    
-    if (!getCookie("cookieConsent")) {
-        popup.classList.add("show");
-    }
-    
-    acceptBtn.addEventListener("click", () => {
-        setCookie("cookieConsent", "all", 30);
-        popup.style.display = "none";
-    });
-    
-    rejectBtn.addEventListener("click", () => {
-        setCookie("cookieConsent", "essential", 30);
-        popup.style.display = "none";
-    });
-    
-    settingsBtn.addEventListener("click", () => {
-        settings.style.display = "flex";
-    });
-    
-    saveBtn.addEventListener("click", () => {
-        const analytics = document.getElementById("analyticsCookie").checked;
-        const ads = document.getElementById("adsCookie").checked;
-    
-        const preference = {
-            analytics: analytics,
-            ads: ads
-        };
-    
-        setCookie("cookieConsent", JSON.stringify(preference), 30);
-        settings.style.display = "none";
-        popup.style.display = "none";
-    });
-    
     window.addEventListener("load", function () {
         const cookieConsent = document.getElementById("cookieConsent");
         const cookieSettings = document.getElementById("cookieSettings");
       
-        // Tampilkan popup cookie saat halaman dibuka
+        // Tampilkan popup saat halaman dibuka
         cookieConsent.style.display = "block";
       
         // Tombol Terima Semua
@@ -138,16 +88,15 @@ document.addEventListener("DOMContentLoaded", function () {
           cookieConsent.style.display = "none";
         });
       
-        // Tombol Pengaturan
+        // Tombol "Pengaturan"
         document.getElementById("openSettings").addEventListener("click", function () {
           cookieSettings.style.display = "block";
         });
       
-        // Tombol Simpan Preferensi
+        // Tombol "Simpan Preferensi"
         document.getElementById("saveSettings").addEventListener("click", function () {
-          cookieConsent.style.display = "none";
           cookieSettings.style.display = "none";
+          cookieConsent.style.display = "none";
         });
       });
       
-});
