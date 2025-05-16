@@ -121,4 +121,33 @@ document.addEventListener("DOMContentLoaded", function () {
         popup.style.display = "none";
     });
     
+    window.addEventListener("load", function () {
+        const cookieConsent = document.getElementById("cookieConsent");
+        const cookieSettings = document.getElementById("cookieSettings");
+      
+        // Tampilkan popup cookie saat halaman dibuka
+        cookieConsent.style.display = "block";
+      
+        // Tombol Terima Semua
+        document.getElementById("acceptAll").addEventListener("click", function () {
+          cookieConsent.style.display = "none";
+        });
+      
+        // Tombol Tolak Non-Essensial
+        document.getElementById("rejectNonEssential").addEventListener("click", function () {
+          cookieConsent.style.display = "none";
+        });
+      
+        // Tombol Pengaturan
+        document.getElementById("openSettings").addEventListener("click", function () {
+          cookieSettings.style.display = "block";
+        });
+      
+        // Tombol Simpan Preferensi
+        document.getElementById("saveSettings").addEventListener("click", function () {
+          cookieConsent.style.display = "none";
+          cookieSettings.style.display = "none";
+        });
+      });
+      
 });
