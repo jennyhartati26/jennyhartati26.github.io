@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
   <title>Website Portofolio</title>
-  <link rel="stylesheet" type="text/css" target="_blank" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  <!-- atas -->
+  <!-- Navigasi -->
   <nav>
     <div class="logo">
       <h1>📚LIBRARY</h1>
     </div>
     <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="book-list.html">Book List</a>
-      </li>
-      <li>
-        <a href="about-me.html">About Me</a>
-      </li>
-      <li>
-        <a href="get-intouch.html">Get In Touch</a>
-      </li>
-    
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book-list.html">Book List</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="get-intouch.html">Get In Touch</a></li>
     </ul>
     <div class="hamburger">
       <span class="line"></span>
@@ -34,51 +23,41 @@
       <span class="line"></span>
     </div>
   </nav>
- <!-- atas -->
 
- <!-- bagian welcome -->
+  <!-- Bagian Welcome -->
   <section class="hero">
     <div class="hero-content">
       <h1 class="title">Welcome,</h1>
       <p class="subtitle">Hello my name is Jenny</p>
-      <p class="description">Website ini akan memberikan informasi katalog buku <br> yang menarik untuk di baca</p>
+      <p class="description">
+        Website ini akan memberikan informasi katalog buku <br>
+        yang menarik untuk di baca
+      </p>
       <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
     </div>
   </section>
-<!-- Bagian welcome-->
 
-
-
-
- 
-
+  <!-- Footer -->
   <div class="footer">
     <div class="item-footer">
       <h1>Email</h1>
       <div class="data-footer">
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThD6A938X2F3kMW50WVmJZtngHfx8eBXFL-w&s" alt="" class="logo-footer">
-        </div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThD6A938X2F3kMW50WVmJZtngHfx8eBXFL-w&s" class="logo-footer"></div>
         <p>jennyhartati9@gmail.com</p>
       </div>
-      
     </div>
     <div class="item-footer">
       <h1>No Handphone</h1>
       <div class="data-footer">
-        <div>
-          <img src="https://static-00.iconduck.com/assets.00/whatsapp-icon-1020x1024-iykox85t.png" alt="" class="logo-footer">
-        </div>
+        <div><img src="https://static-00.iconduck.com/assets.00/whatsapp-icon-1020x1024-iykox85t.png" class="logo-footer"></div>
         <p>082274558654</p>
       </div>
     </div>
     <div class="item-footer">
       <h1>Alamat</h1>
       <div class="data-footer">
-        <div>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" alt="" class="logo-footer">
-        </div>
-        <p> Jl. Harmonika Baru,<br> Medan Selayang, Kota Medan</p>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" class="logo-footer"></div>
+        <p>Jl. Harmonika Baru,<br>Medan Selayang, Kota Medan</p>
       </div>
     </div>
   </div>
@@ -86,29 +65,29 @@
   <div class="bottom">
     <p>@2025 My Library Website</p>
   </div>
-  
-  <body>
-    <!-- Cookie Consent Popup -->
-<div class="cookie-consent" id="cookieConsent">
-  <p>🍪 Kami menggunakan cookies untuk meningkatkan pengalaman Anda.</p>
-  <div class="cookie-buttons">
-    <button id="accept All">Terima</button>
-    <button id="reject Non Essential">Tolak</button>
-    <button id="open Settings">⚙️</button>
+
+  <!-- ✅ Cookie Consent Popup -->
+  <div id="cookieConsent" style="display: none;">
+    <div class="cookie-popup">
+      🍪 Kami menggunakan cookies untuk meningkatkan pengalaman Anda.
+      <button id="acceptAll">Terima</button>
+      <button id="rejectNonEssential">Tolak</button>
+      <button id="openSettings">⚙️</button>
+    </div>
   </div>
-</div>
 
-<!-- Modal Pengaturan -->
-<div class="cookie-settings" id="cookieSettings">
-  <h3>Pengaturan Cookie</h3>
-  <label><input type="checkbox" checked disabled> Cookies Esensial (wajib)</label><br>
-  <label><input type="checkbox" id="analyticsCookie"> Analytics</label><br>
-  <label><input type="checkbox" id="adsCookie"> Iklan Terpersonalisasi</label><br>
-  <button id="saveSettings">Simpan Preferensi</button>
-</div>
-</body>
+  <!-- ✅ Cookie Settings -->
+  <div id="cookieSettings" style="display: none;">
+    <div class="cookie-settings">
+      <h3>Pengaturan Cookie</h3>
+      <label><input type="checkbox" checked disabled> Cookies Esensial (wajib)</label><br>
+      <label><input type="checkbox"> Analytics</label><br>
+      <label><input type="checkbox"> Iklan Terpersonalisasi</label><br>
+      <button id="saveSettings">Simpan Preferensi</button>
+    </div>
+  </div>
 
+  <!-- ✅ JavaScript -->
+  <script src="Java-script.js"></script>
 </body>
-<script src="Java-script.js"></script>
 </html>
-
