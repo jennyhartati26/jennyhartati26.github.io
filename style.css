@@ -502,3 +502,48 @@ body, html {
   color: #fafafa;
 }
 
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  font-family: sans-serif;
+}
+.cookie-consent.show {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cookie-buttons button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#acceptAll { background-color: #28a745; color: white; }
+#rejectNonEssential { background-color: #dc3545; color: white; }
+#openSettings { background-color: #6c757d; color: white; }
+
+.cookie-settings {
+  display: none;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  top: 0; left: 0; right: 0; bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.cookie-settings-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
