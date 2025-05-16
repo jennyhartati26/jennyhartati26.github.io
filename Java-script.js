@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkScroll);
     checkScroll();
 
-    // Efek ketik otomatis
+    // ✅ Efek ketik otomatis
     const textElement = document.querySelector(".subtitle");
     const text = "Hello, my name is Jenny";
     let index = 0;
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (textElement) {
-        textElement.textContent = "";
+        textElement.textContent = ""; // Kosongkan dulu
         typeEffect();
     }
 
@@ -76,21 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cookieConsent) {
         cookieConsent.style.display = "block";
 
-        document.getElementById("acceptAll").addEventListener("click", function () {
-            cookieConsent.style.display = "none";
-        });
-
-        document.getElementById("rejectNonEssential").addEventListener("click", function () {
-            cookieConsent.style.display = "none";
-        });
-
-        document.getElementById("openSettings").addEventListener("click", function () {
-            cookieSettings.style.display = "block";
-        });
-
-        document.getElementById("saveSettings").addEventListener("click", function () {
-            cookieSettings.style.display = "none";
-            cookieConsent.style.display = "none";
-        });
-    }
-});
+        const btnAccept = document.getElementById("acceptAll");
+        const btnReject = document.getElementById("rejectNonEssential");
+        const btnSettings = document.getElementById("openSettings");
+        const btnSave = doc
