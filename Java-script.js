@@ -75,25 +75,25 @@ document.addEventListener("DOMContentLoaded", function () {
         const cookieConsent = document.getElementById("cookieConsent");
         const cookieSettings = document.getElementById("cookieSettings");
       
-        // Tampilkan popup saat halaman dibuka
+        // Tampilkan popup saat halaman dimuat
         cookieConsent.style.display = "block";
       
-        // Tombol Terima Semua
+        // Tombol Terima
         document.getElementById("acceptAll").addEventListener("click", function () {
           cookieConsent.style.display = "none";
         });
       
-        // Tombol Tolak Non-Essensial
+        // Tombol Tolak
         document.getElementById("rejectNonEssential").addEventListener("click", function () {
           cookieConsent.style.display = "none";
         });
       
-        // Tombol "Pengaturan"
+        // Tombol Pengaturan
         document.getElementById("openSettings").addEventListener("click", function () {
           cookieSettings.style.display = "block";
         });
       
-        // Tombol "Simpan Preferensi"
+        // Tombol Simpan Preferensi
         document.getElementById("saveSettings").addEventListener("click", function () {
           cookieSettings.style.display = "none";
           cookieConsent.style.display = "none";
