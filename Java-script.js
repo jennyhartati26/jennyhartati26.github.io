@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Toggle menu hamburger
+    // 🔹 Toggle menu hamburger
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector("nav ul");
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Smooth scroll + fade-in
+    // 🔹 Smooth scroll + fade-in
     document.querySelectorAll("a[href^='#']").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Scroll animasi
+    // 🔹 Scroll animation
     const sections = document.querySelectorAll("section, .footer, .bottom");
 
     function checkScroll() {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkScroll);
     checkScroll();
 
-    // Efek ketik otomatis
+    // 🔹 Efek ketik otomatis
     const textElement = document.querySelector(".subtitle");
     const text = "Hello, my name is Jenny";
     let index = 0;
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         typeEffect();
     }
 
-    // COOKIE POPUP LOGIC
+    // 🔹 COOKIE POPUP LOGIC
     const cookieConsent = document.getElementById("cookieConsent");
     const cookieSettings = document.getElementById("cookieSettings");
     const btnAccept = document.getElementById("acceptAll");
@@ -77,36 +77,37 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnSettings = document.getElementById("openSettings");
     const btnSave = document.getElementById("saveSettings");
 
+    // Fungsi bantu ambil cookie
     function getCookie(name) {
         const value = `; ${document.cookie}`;
         const parts = value.split(`; ${name}=`);
         if (parts.length === 2) return parts.pop().split(";").shift();
     }
 
-    // Tampilkan pop-up hanya jika belum ada cookie consent
+    // ✅ Tampilkan popup hanya jika belum setuju/tolak
     if (!getCookie("cookieConsent")) {
         cookieConsent.style.display = "block";
     }
 
-    // Klik "Terima"
+    // 🔘 Klik "Terima"
     btnAccept.addEventListener("click", function () {
         document.cookie = "cookieConsent=accepted; max-age=31536000; path=/";
         cookieConsent.style.display = "none";
     });
 
-    // Klik "Tolak"
+    // 🔘 Klik "Tolak"
     btnReject.addEventListener("click", function () {
         document.cookie = "cookieConsent=rejected; max-age=31536000; path=/";
         cookieConsent.style.display = "none";
     });
 
-    // Klik tombol pengaturan
+    // ⚙️ Klik "Pengaturan"
     btnSettings.addEventListener("click", function () {
         cookieConsent.style.display = "none";
         cookieSettings.style.display = "block";
     });
 
-    // Klik Simpan Preferensi
+    // 💾 Klik "Simpan Preferensi"
     btnSave.addEventListener("click", function () {
         const analytics = document.querySelectorAll("#cookieSettings input")[1].checked;
         const ads = document.querySelectorAll("#cookieSettings input")[2].checked;
