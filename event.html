@@ -1,47 +1,86 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Event Perpustakaan</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Event Perpustakaan</h1>
-    <p>Temukan kegiatan menarik di perpustakaan kami!</p>
-  </header>
+  <!-- Navigasi -->
+  <nav>
+    <div class="logo">
+      <h1>📚LIBRARY</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book-list.html">Book List</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="get-intouch.html">Get In Touch</a></li>
+      <li><a href="event.html" class="active">Event</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </nav>
 
-  <main>
-    <section class="event-list">
-      <article class="event">
-        <h2>Bedah Buku: "Laut Bercerita"</h2>
-        <p><strong>Tanggal:</strong> 10 Juni 2025</p>
-        <p><strong>Waktu:</strong> 10.00 - 12.00 WIB</p>
-        <p><strong>Tempat:</strong> Ruang Baca Lantai 2</p>
-        <p><strong>Deskripsi:</strong> Diskusi mendalam tentang buku karya Leila S. Chudori dengan moderator dosen Sastra UI.</p>
-      </article>
+  <!-- Konten Event -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="title">Event Perpustakaan</h1>
+      <p class="description">
+        Berikut adalah kegiatan perpustakaan yang telah kami dokumentasikan di Instagram:
+      </p>
 
-      <article class="event">
-        <h2>Workshop Literasi Digital</h2>
-        <p><strong>Tanggal:</strong> 15 Juni 2025</p>
-        <p><strong>Waktu:</strong> 13.00 - 16.00 WIB</p>
-        <p><strong>Tempat:</strong> Aula Perpustakaan</p>
-        <p><strong>Deskripsi:</strong> Pelatihan keterampilan mencari dan mengevaluasi informasi di internet secara kritis.</p>
-      </article>
+      <div class="event">
+        <h2>📖 Pameran Buku dan Diskusi Sastra</h2>
+        <a href="https://www.instagram.com/p/DJYVM9wxwEf/?igsh=MnNoOTF1YWJ2dGJn" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20" style="vertical-align: middle; margin-right: 5px;">
+          Lihat di Instagram
+        </a>
+      </div>
 
-      <article class="event">
-        <h2>Pameran Arsip Sejarah Lokal</h2>
-        <p><strong>Tanggal:</strong> 1–7 Juli 2025</p>
-        <p><strong>Waktu:</strong> 09.00 - 15.00 WIB</p>
-        <p><strong>Tempat:</strong> Galeri Perpustakaan</p>
-        <p><strong>Deskripsi:</strong> Pameran dokumen dan foto sejarah lokal dari abad ke-20 hasil digitalisasi arsip daerah.</p>
-      </article>
-    </section>
-  </main>
+      <div class="event">
+        <h2>🎤 Bedah Buku: Literasi dan Teknologi</h2>
+        <a href="https://www.instagram.com/p/CzaK9ueSsSe/?igsh=NjdiNDkzMnVneWZ4" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20" style="vertical-align: middle; margin-right: 5px;">
+          Lihat di Instagram
+        </a>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Perpustakaan Kampus. Semua hak dilindungi.</p>
-  </footer>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="item-footer">
+      <h1>Email</h1>
+      <div class="data-footer">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThD6A938X2F3kMW50WVmJZtngHfx8eBXFL-w&s" class="logo-footer"></div>
+        <p>jennyhartati9@gmail.com</p>
+      </div>
+    </div>
+    <div class="item-footer">
+      <h1>No Handphone</h1>
+      <div class="data-footer">
+        <div><img src="https://static-00.iconduck.com/assets.00/whatsapp-icon-1020x1024-iykox85t.png" class="logo-footer"></div>
+        <p>082274558654</p>
+      </div>
+    </div>
+    <div class="item-footer">
+      <h1>Alamat</h1>
+      <div class="data-footer">
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" class="logo-footer"></div>
+        <p>Jl. Harmonika Baru,<br>Medan Selayang, Kota Medan</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <p>@2025 My Library Website</p>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="Java-script.js"></script>
 </body>
 </html>
