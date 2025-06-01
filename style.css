@@ -502,62 +502,45 @@ body, html {
   color: #fafafa;
 }
 
-/* Popup cookie di atas */
-.cookie-consent {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #222;
-  color: #fff;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  z-index: 9999;
-  width: 300px;
-  font-size: 14px;
-  display: none; /* Mulai dengan disembunyikan */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-/* Tombol dalam popup */
-.cookie-buttons button {
-  margin: 5px 3px;
-  padding: 6px 10px;
-  background-color: #f5a623;
-  border: none;
+header {
+  background-color: #003366;
   color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 13px;
+  padding: 20px;
+  text-align: center;
 }
 
-.cookie-buttons button:hover {
-  background-color: #e08e13;
+main {
+  padding: 20px;
 }
 
-/* Pengaturan tambahan (jika dibuka) */
-.cookie-settings {
-  display: none;
-  position: fixed;
-  top: 100px;
-  right: 20px;
-  background-color: #333;
-  color: #fff;
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event {
+  background-color: white;
   padding: 15px;
-  border-radius: 8px;
-  width: 300px;
-  z-index: 9999;
-  font-size: 13px;
-}
-.cookie-settings input[type="checkbox"] {
-  margin-right: 6px;
-}
-.cookie-settings button {
-  margin-top: 10px;
-  background-color: #f5a623;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 4px;
-  cursor: pointer;
+  border-left: 5px solid #003366;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
