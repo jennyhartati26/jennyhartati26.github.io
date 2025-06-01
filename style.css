@@ -502,59 +502,80 @@ body, html {
   color: #fafafa;
 }
 
-/* Container untuk daftar event */
-.event-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 50px;
-  margin: 0 auto;
-  padding: 20px;
+/* Bagian hero umum */
+.hero {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
 }
 
-/* Gaya setiap kotak event */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Judul dan deskripsi */
+.hero .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero .description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Setiap event box */
 .event {
-  background-color: #fff;
-  padding: 20px;
-  border-left: 5px solid #b77abd; /* Warna aksen kiri */
-  border-radius: 12px;
+  background-color: #ffffff;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 /* Judul event */
 .event h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
 }
 
-/* Link Instagram */
+/* Tombol Instagram */
 .event a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-  text-decoration: none;
   background-color: #e1306c;
   color: white;
-  padding: 8px 14px;
+  padding: 10px 16px;
   border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: background-color 0.3s ease;
 }
 
 .event a:hover {
-  background-color: #c72d60;
+  background-color: #c1275b;
 }
 
-/* Responsive jika perlu */
-@media (max-width: 600px) {
-  .event h2 {
-    font-size: 1.2rem;
+/* Responsive untuk mobile */
+@media screen and (max-width: 600px) {
+  .hero .title {
+    font-size: 2rem;
   }
 
-  .event a {
-    font-size: 0.9rem;
-    padding: 6px 10px;
+  .hero .description {
+    font-size: 1rem;
+  }
+
+  .event {
+    padding: 20px;
+  }
+
+  .event h2 {
+    font-size: 1.1rem;
   }
 }
