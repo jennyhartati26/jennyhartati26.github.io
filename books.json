@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Atomic Habits",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg",
+      "link": "https://www.goodreads.com/book/show/40121378-atomic-habits",
+      "description": "Baca Buku.."
+    },
+    {
+      "id": 2,
+      "title": "Sebuah Seni untuk bersikap bodo amat",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sebuah-seni-untuk-bersikap-bodoh-amat.jpg",
+      "link": "https://www.goodreads.com/book/show/40121378-atomic-habits",
+      "description": "Baca Buku.."
+    },
+    {
+      "id": 3,
+      "title": "Filosofi Teras",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1548033656i/42861019.jpg",
+      "link": "https://www.goodreads.com/book/show/42861019-filosofi-teras",
+      "description": "Baca Buku.."
+    },
+    {
+      "id": 4,
+      "title": "Introducing HTML5",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348663465i/8352701.jpg",
+      "link": "https://www.goodreads.com/book/show/8352701-introducing-html-5?from_search=true&from_srp=true&qid=3rITQpqzJ3&rank=7",
+      "description": "Baca Buku.."
+    }
+  ]
+} 

@@ -27,6 +27,9 @@
         <a href="get-intouch.html">Get In Touch</a>
 
       </li>
+      <li>
+        <a href="event.html">Event</a>
+      </li>
     </ul>
     <div class="hamburger">
       <span class="line"></span>
@@ -42,68 +45,124 @@
       <h1 class="title">Katalog Buku</h1>
       <p class="subtitle">Top 4 my favorites books</p>
     </div>
-    <div class="layout-buku">
-      <div class="center-buku">
-        <div class="card-buku">
-          <img class="image-buku"
-            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg"
-            alt="Avatar">
-          <div class="card-desc">
-            <h4><b>Atomic Habits</b></h4>
-            <a 
-            target="_blank"
-            href="https://www.goodreads.com/book/show/40121378-atomic-habits">Baca Buku..</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="center-buku">
-        <div class="card-buku">
-          <img class="image-buku"
-            src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Sebuah-seni-untuk-bersikap-bodoh-amat.jpg"
-            alt="Avatar">
-          <div class="card-desc">
-            <h4><b>Sebuah Seni untuk bersikap <br> bodo amat</b></h4>
-            <a 
-            target="_blank"
-            href="https://www.goodreads.com/book/show/40121378-atomic-habits">Baca Buku..</a>
-          </div>
-        </div>
-      </div>
+    <!-- Search Form -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Cari buku..." class="search-input">
+    </div>
 
-      <div class="center-buku">
-        <div class="card-buku">
-          <img class="image-buku"
-            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1548033656i/42861019.jpg"
-            alt="Avatar">
-          <div class="card-desc">
-            <h4><b>Filosofi Teras</b></h4>
-            <a 
-            target="_blank"
-            href="https://www.goodreads.com/book/show/42861019-filosofi-teras">Baca Buku..</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="center-buku">
-        <div class="card-buku">
-          <img class="image-buku"
-            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348663465i/8352701.jpg"
-            alt="Avatar">
-          <div class="card-desc">
-            <h4><b>Introducing HTML5</b></h4>
-            <a
-              target="_blank"
-              href="https://www.goodreads.com/book/show/8352701-introducing-html-5?from_search=true&from_srp=true&qid=3rITQpqzJ3&rank=7">Baca
-              Buku..</a>
-          </div>
-        </div>
-      </div>
-
-
+    <div class="layout-buku" id="bookList">
+      <!-- Books will be loaded here -->
     </div>
   </div>
-<!-- Katalog Buku -->
+
+  <script>
+    // Book data
+    const books = [
+      {
+        id: 1,
+        title: "Atomic Habits",
+        image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg",
+        link: "https://www.goodreads.com/book/show/40121378-atomic-habits",
+        description: "Baca Buku.."
+      },
+      {
+        id: 2,
+        title: "Sebuah Seni untuk bersikap bodo amat",
+        image: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sebuah-seni-untuk-bersikap-bodoh-amat.jpg",
+        link: "https://www.goodreads.com/book/show/40121378-atomic-habits",
+        description: "Baca Buku.."
+      },
+      {
+        id: 3,
+        title: "Filosofi Teras",
+        image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1548033656i/42861019.jpg",
+        link: "https://www.goodreads.com/book/show/42861019-filosofi-teras",
+        description: "Baca Buku.."
+      },
+      {
+        id: 4,
+        title: "Introducing HTML5",
+        image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348663465i/8352701.jpg",
+        link: "https://www.goodreads.com/book/show/8352701-introducing-html-5?from_search=true&from_srp=true&qid=3rITQpqzJ3&rank=7",
+        description: "Baca Buku.."
+      }
+    ];
+
+    // Function to display books
+    function displayBooks(filteredBooks = books) {
+      const bookList = document.getElementById('bookList');
+      bookList.innerHTML = ''; // Clear existing books
+      
+      if (filteredBooks.length === 0) {
+        bookList.innerHTML = '<div class="no-results">Tidak ada buku yang ditemukan</div>';
+        return;
+      }
+
+      filteredBooks.forEach(book => {
+        const bookElement = `
+          <div class="center-buku">
+            <div class="card-buku">
+              <img class="image-buku" src="${book.image}" alt="${book.title}">
+              <div class="card-desc">
+                <h4><b>${book.title}</b></h4>
+                <a target="_blank" href="${book.link}">${book.description}</a>
+              </div>
+            </div>
+          </div>
+        `;
+        bookList.innerHTML += bookElement;
+      });
+    }
+
+    // Function to handle search
+    function handleSearch() {
+      const searchInput = document.getElementById('searchInput');
+      const searchTerm = searchInput.value.toLowerCase().trim();
+
+      const filteredBooks = books.filter(book => 
+        book.title.toLowerCase().includes(searchTerm)
+      );
+
+      displayBooks(filteredBooks);
+    }
+
+    // Add event listener for search input
+    document.getElementById('searchInput').addEventListener('input', handleSearch);
+
+    // Display books when the page loads
+    document.addEventListener('DOMContentLoaded', () => displayBooks());
+  </script>
+
+  <style>
+    .search-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 20px;
+      border: 2px solid #213555;
+      border-radius: 25px;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .search-input:focus {
+      box-shadow: 0 0 5px rgba(33, 53, 85, 0.3);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      color: #666;
+      width: 100%;
+    }
+  </style>
 
     <div class="footer">
     <div class="item-footer">
